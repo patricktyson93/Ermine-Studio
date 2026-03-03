@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ermine Studio - Spreading the Vision of Hyperliquid</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Barlow,sans-serif;overflow-x:hidden}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#000}
+.video{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;width:auto;height:auto;z-index:1}
+.nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:16px;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;gap:80px;box-shadow:0 4px 24px rgba(0,0,0,.08);z-index:1000;max-width:90vw}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:32px}
+.logo-text{font-size:16px;font-weight:600;color:#1a1a1a;letter-spacing:.5px}
+.nav-menu{display:flex;gap:32px}
+.link{font-size:14px;font-weight:500;color:#1a1a1a;text-decoration:none;transition:opacity .2s}
+.link:hover{opacity:.6}
+.btn{background:#222;color:#fff;border-radius:12px;padding:12px 24px;font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px;text-decoration:none;transition:background .2s}
+.btn:hover{background:#000}
+.arrow{width:20px;height:20px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.content{text-align:center;z-index:10;padding:0 24px;max-width:1000px;position:relative;margin-top:-15vh}
+.headline{font-size:clamp(28px,4.5vw,56px);font-weight:300;color:#fff;line-height:1.2;letter-spacing:-.02em;text-shadow:0 2px 40px rgba(0,0,0,.5)}
+@media(max-width:768px){.nav{flex-direction:column;gap:16px;padding:20px 24px}.nav-menu{gap:20px}.content{margin-top:-10vh}}
+</style>
+</head>
+<body>
+<section class="hero">
+<video class="video" autoplay muted loop playsinline>
+<source src="./Ermine_2.mp4" type="video/mp4">
+</video>
+<nav class="nav">
+<a href="#" class="logo">
+<svg viewBox="0 0 200 200"><ellipse fill="#f8f8f8" stroke="#1a1a1a" stroke-width="2" cx="100" cy="100" rx="40" ry="60"/><ellipse fill="#1a1a1a" cx="88" cy="90" rx="3" ry="4"/><ellipse fill="#1a1a1a" cx="112" cy="90" rx="3" ry="4"/></svg>
+<span class="logo-text">ERMINE STUDIO</span>
+</a>
+<div class="nav-menu">
+<a href="#" class="link">Home</a>
+<a href="#" class="link">About</a>
+</div>
+<a href="#" class="btn">Contact<span class="arrow"><svg width="10" height="10"><path d="M1 9L9 1M9 1H1M9 1V9" stroke="white" stroke-width="1.5"/></svg></span></a>
+</nav>
+<div class="content">
+<h1 class="headline">Spreading the Vision of Hyperliquid</h1>
+</div>
+</section>
+</body>
+</html>
